@@ -783,12 +783,26 @@ img {
   align-items: center;
 }
 
+.card-text-2 {
+  font-family: 'Playfair Display';
+  font-size: 28px;
+  font-weight: 600;
+}
+
 .card-new {
   display: flex;
   align-items: center;
   width: 270px;
   height: 289px;
 }
+
+.text-name {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-weight: 100;
+}
+
+
 
 .image {
   width: 175px;
@@ -822,24 +836,35 @@ img {
   height: 614px;
   background: #ffffff;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .product-chair {
   width: 270px;
   height: 289px;
   background: #ffffff;
+  cursor: pointer;
 }
 
 .product-candelier {
   width: 270px;
   height: 289px;
   background: #ffffff;
+  cursor: pointer;
 }
 
 .product-table {
-  background: #FAECE9;
   width: 270px;
   height: 289px;
+  cursor: pointer;
+}
+
+
+.product-chair:hover,
+.product-candelier:hover, 
+.product-table:hover,
+.big-card:hover {
+  background: #FAECE9;
 }
 
 
@@ -1138,10 +1163,16 @@ img {
 
 .swiper-container-2-button-prev {
   left: 318px;
+  color: #00000000;
 }
 
 .swiper-container-2-button-next {
-  right: 410px;
+  right: 326px;
+  color: #00000000;
+}
+
+.button {
+  
 }
 
 
@@ -1166,6 +1197,10 @@ img {
 }
 
 .feedback-text {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 16px;
   width: 653px;
   height: 69px;
   text-align: center;
@@ -1191,6 +1226,11 @@ img {
   justify-content: flex-end;
 }
 
+.page-heading {
+  font-family: Bold;
+  font-size: 28px;
+  font-weight: 600;
+}
 
 .header-2 {
   display: flex;
@@ -1221,8 +1261,40 @@ img {
 }
 
 .nav-list {
+  font-family: 'Open Sans';
   list-style-type: none;
   margin: 0px 20px 0px 0px;
+  opacity: .4;
+}
+
+.nav-list:hover {
+  font-family: 'Open Sans';
+  color: #000000;
+  text-decoration: underline;
+}
+
+.chair-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  color: #000000;
+}
+
+.chair-price {
+  margin: 0;
+
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.prise-2 {
+  color: #979798;
+  text-decoration: line-through;
+  font-size: 16px;
 }
 
 
@@ -1242,7 +1314,7 @@ img {
 .swiper-wrapper-3::before {
   content: "";
   position: absolute;
-  height: 100%;
+  height: 536px;
   width: 100vw;
   top: 0;
   right: 45%;
@@ -1261,6 +1333,11 @@ img {
   height: 355px;
   background: #ffffff;
   cursor: pointer;
+  box-shadow: 0px 0px 11px -10px #000000;
+}
+
+.card-chair:hover {
+  background: hsl(0, 0%, 100%);
 }
 
 .card {
@@ -1310,6 +1387,11 @@ img {
   justify-content: space-between;
 }
 
+.footer-link {
+  color: #000000;
+  font-family: 'Open Sans';
+}
+
 .footer-social {
   display: flex;
   flex-direction: row;
@@ -1319,16 +1401,28 @@ img {
 .phone {
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.phone-number {
+  color: #000000
 }
 
 .mail {
   margin: 0 33px;
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .email {
   margin: 0 10px;
+  color: #000000;
+}
+
+.phone:hover,
+.mail:hover {
+  opacity: .3;
 }
 
 .footer-bottom {
@@ -1340,7 +1434,6 @@ img {
 .footer-secondary {
   opacity: .3;
   font-size: 10px;
-  width: 392px;
   height: 13px;
   margin: 5px;
 }
