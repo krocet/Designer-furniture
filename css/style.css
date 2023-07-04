@@ -857,11 +857,12 @@ img {
   width: 270px;
   height: 289px;
   cursor: pointer;
+  background: #ffffff;
 }
 
 
 .product-chair:hover,
-.product-candelier:hover, 
+.product-candelier:hover,
 .product-table:hover,
 .big-card:hover {
   background: #FAECE9;
@@ -1171,9 +1172,41 @@ img {
   color: #00000000;
 }
 
-.button {
-  
+
+.swiper-container-2-button-prev {
+  right: 326px;
+  position: absolute;
+  top: 33%;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px -6px #000000;
+  cursor: pointer;
+  z-index: 1;
 }
+
+.swiper-container-2-button-next {
+  right: 326px;
+  position: absolute;
+  top: 33%;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 11px -6px #000000;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.swiper-button {
+  display: block;
+  margin: 13px auto;
+}
+
+.swiper-container-2-button-prev:hover,
+.swiper-container-2-button-next:hover {
+  background: #FAECE9;
+}
+
 
 
 .slide-feedback {
@@ -1194,6 +1227,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 15px;
 }
 
 .feedback-text {
@@ -1227,9 +1261,11 @@ img {
 }
 
 .page-heading {
+  display: flex;
   font-family: Bold;
   font-size: 28px;
   font-weight: 600;
+  flex-wrap: wrap;
 }
 
 .header-2 {
@@ -1334,11 +1370,48 @@ img {
   background: #ffffff;
   cursor: pointer;
   box-shadow: 0px 0px 11px -10px #000000;
+  position: relative;
+  display: inline-block;
 }
 
 .card-chair:hover {
   background: hsl(0, 0%, 100%);
 }
+
+
+
+
+.card-chair-content {
+  display: none;
+  position: absolute;
+  background-color: #303032;
+  width: 209px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.card-chair-content a {
+  color: #f9ebeb;
+  padding: 18px 68px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-chair-content a:hover {
+  background-color: #1a1717;
+}
+
+.card-chair:hover .card-chair-content {
+  display: block;
+}
+
+.card-chair:hover .card-chair {
+  background-color: #3e8e41;
+}
+
 
 .card {
   display: flex;
@@ -1350,6 +1423,7 @@ img {
   height: auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-photo {

@@ -10,8 +10,8 @@ const swiper = new Swiper('.swiper-container-2', {
 
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-container-2-button-next',
+        prevEl: '.swiper-container-2-button-prev',
     },
 
 });
