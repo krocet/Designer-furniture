@@ -789,11 +789,20 @@ img {
   font-weight: 600;
 }
 
+.card-text-3 {
+  width: 90px;
+  height: 4px;
+  background: black;
+  margin-top: 15px;
+}
+
 .card-new {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 270px;
   height: 289px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .text-name {
@@ -1304,6 +1313,10 @@ img {
   opacity: .4;
 }
 
+.nav-list a {
+  color: #303032;
+}
+
 .nav-list:hover {
   font-family: 'Open Sans';
   color: #000000;
@@ -1388,7 +1401,7 @@ img {
 .card-chair-content {
   display: none;
   position: absolute;
-  background-color: #303032;
+  background-color: #1a1717;
   width: 209px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -1405,7 +1418,7 @@ img {
 }
 
 .card-chair-content a:hover {
-  background-color: #1a1717;
+  background-color: #303032;
 }
 
 .card-chair:hover .card-chair-content {
@@ -1414,6 +1427,15 @@ img {
 
 .card-chair:hover .card-chair {
   background-color: #3e8e41;
+}
+
+.chair-content {
+  position: absolute;
+  top: -364px;
+  width: 209px;
+  height: 7px;
+  background: #1a1717;
+  margin-top: 15px;
 }
 
 
@@ -1595,9 +1617,8 @@ img {
     height: 1170px;
   }
 
-  .card-chair{
+  .card-chair {
     width: 45%;
   }
 
 }
-
